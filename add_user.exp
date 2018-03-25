@@ -1,0 +1,9 @@
+#!/usr/bin/expect 
+set username [lindex $argv 0]
+set password [lindex $argv 1]
+spawn adduser "$username" 
+expect {
+	"*password" {send "$password\r";exp_continue }  
+	"*password" {send "$password\r" }
+}
+ 
