@@ -13,7 +13,7 @@ ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key && \
 ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key && \
 
 apk add make automake autoconf libtool subversion git readline-dev mysql-client \
-		net-tools vim gcc g++ libc-dev valgrind gdb py-pip lua5.3 python-dev lua5.3-dev mysql-dev &&\
+		net-tools vim gcc g++ libc-dev valgrind gdb py-pip lua5.3 python-dev lua5.3-dev mysql-dev file &&\
 
 echo 'export LANG="en_US.utf8"' >> /etc/profile && \
 
